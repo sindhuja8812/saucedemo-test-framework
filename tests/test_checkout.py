@@ -11,10 +11,10 @@ from pages.cart_page import CartPage
 from pages.checkout_page import CheckoutPage
 
 CHECKOUT_CASES = [
-    pytest.param("Sindhuja", "K", "600001", True, id="TC06_all_fields_present"),
-    pytest.param("", "K", "600001", False, id="TC07_missing_first_name"),
-    pytest.param("Sindhuja", "", "600001", False, id="TC08_missing_last_name"),
-    pytest.param("Sindhuja", "K", "", False, id="TC09_missing_postal_code"),
+    pytest.param("Test", "User", "123456", True, id="TC06_all_fields_present"),
+    pytest.param("", "User", "123456", False, id="TC07_missing_first_name"),
+    pytest.param("Test", "", "123456", False, id="TC08_missing_last_name"),
+    pytest.param("Test", "User", "", False, id="TC09_missing_postal_code"),
 ]
 
 
